@@ -1,0 +1,10 @@
+diff --git a/src/foo.ts b/src/foo.ts
+index 1111111..2222222 100644
+--- a/src/foo.ts
++++ b/src/foo.ts
+@@ -1,6 +1,9 @@
+ export function foo() {
++  // TODO: remove debug logging
++  console.log("debug");
+   return 1;
+ }

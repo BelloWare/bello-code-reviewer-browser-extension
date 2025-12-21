@@ -1,0 +1,25 @@
+{
+  "name": "bello-debug-server",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --loader ts-node/esm server.ts",
+    "start": "node dist/server.js",
+    "build": "tsc",
+    "dev:ui": "npm --prefix web-ui run dev",
+    "build:ui": "npm --prefix web-ui run build"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "fs-extra": "^11.2.0"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.19.5",
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.9.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
+}

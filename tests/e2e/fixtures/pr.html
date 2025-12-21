@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Mock GitHub PR</title>
+  </head>
+  <body>
+    <span class="commit-ref">main</span>
+    <div data-path="src/foo.ts" class="js-file">
+      <table>
+        <tr>
+          <td class="blob-num-addition" data-line-number="1" data-line-number-old="0">1</td>
+          <td class="blob-code">console.log("hi")</td>
+        </tr>
+        <tr>
+          <td class="blob-num-deletion" data-line-number="2" data-line-number-old="2">2</td>
+          <td class="blob-code">const x = 1;</td>
+        </tr>
+      </table>
+    </div>
+    <div data-path="src/bar.ts" class="js-file">
+      <table>
+        <tr>
+          <td class="blob-num-addition" data-line-number="10" data-line-number-old="9">10</td>
+          <td class="blob-code">TODO: fix</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

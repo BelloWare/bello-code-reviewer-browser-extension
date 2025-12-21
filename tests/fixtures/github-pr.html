@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>PR Fixture</title>
+  </head>
+  <body>
+    <span class="commit-ref">feature-branch</span>
+    <div id="files">
+      <div class="js-file" data-path="src/app.ts">
+        <table>
+          <tr>
+            <td class="blob-num-addition" data-line-number="10">10</td>
+            <td class="blob-code blob-code-addition">console.log('debugging');</td>
+          </tr>
+          <tr>
+            <td class="blob-num-context" data-line-number="11">11</td>
+            <td class="blob-code blob-code-context">// TODO: fix later</td>
+          </tr>
+        </table>
+      </div>
+      <div class="js-file" data-path="package-lock.json">
+        <pre>
+- "lodash": "4.17.21"
++ "lodash": "5.0.0"
+        </pre>
+      </div>
+    </div>
+  </body>
+</html>

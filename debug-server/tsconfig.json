@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ES2020",
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "outDir": "dist"
+  },
+  "include": ["./**/*.ts"],
+  "exclude": ["web-ui"]
+}
