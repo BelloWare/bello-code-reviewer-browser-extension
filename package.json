@@ -1,0 +1,30 @@
+{
+  "name": "extension-debug-boilerplate",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "debug-server",
+    "debug-server/web-ui",
+    "extension"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm:dev:server\" \"npm:dev:extension\" \"npm:dev:browser\"",
+    "dev:server": "DEBUG_SERVER_PORT=${DEBUG_SERVER_PORT:-3030} npm --prefix debug-server run dev",
+    "dev:extension": "npm --prefix extension run dev",
+    "dev:browser": "node scripts/launch-browser-with-extension.js",
+    "build": "npm --prefix extension run build",
+    "test:extension": "ts-node --esm scripts/run-tests.ts",
+    "test:e2e": "playwright test",
+    "openrouter:proxy": "node openrouter-proxy/server.js"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "concurrently": "^8.0.0",
+    "playwright": "^1.56.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "@google/gemini-cli": "^0.17.0"
+  }
+}

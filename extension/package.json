@@ -1,0 +1,19 @@
+{
+  "name": "bello-extension",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "EXT_MODE=debug vite build --config vite.config.ts --watch",
+    "build": "EXT_MODE=prod vite build --config vite.config.ts",
+    "build:debug": "EXT_MODE=debug vite build --config vite.config.ts"
+  },
+  "dependencies": {
+    "clsx": "^2.1.0",
+    "preact": "^10.19.3"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.266",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.10"
+  }
+}
